@@ -26,6 +26,7 @@ module.exports = function (source) {
     }
   });
 
+  riot.js.parsers['ecmascript-6'] = js => js;
   try {
     return riot.compile(content, options);
   } catch (e) {
